@@ -16,5 +16,27 @@
       </button>
     </p>
   </div> -->
-  <app-post-list [posts]="posts"></app-post-list>
+  <div class="row">
+    <div class="col-md-8">
+      <app-post-list [posts]="posts"></app-post-list>
+
+      <app-loader [isLoading]="isLoading"></app-loader>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="max-width: 20rem;">
+        <!-- Card Header -->
+        <div class="card-header">
+          Links
+        </div>
+        <!-- Card Block -->
+        <div class="card-body">
+          <p class="card-text">GitHub projects</p>
+        </div>
+        <!-- List Group -->
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Medium Publications</li>
+        </ul>
+        </div>
+    </div>
+  </div>
 </div>
