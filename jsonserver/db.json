@@ -1,0 +1,25 @@
+{
+  "publications": 
+    {
+      "payload": {
+        "references": {
+          "Post": {
+            "221e4f1f5648": {
+              "createdAt": 1520626242440,
+              "id": "d987de65ec7",
+              "title": "How to define a highly scalable folder structure for your Angular project",
+              "slug": "choosing-a-highly-scalable-folder-structure-in-angular",
+              "updatedAt": 1523256347618
+            },
+            "d987de65ec7": { 
+              "createdAt": 1521385630255,
+              "id": "221e4f1f5648",
+              "title": "Creating Forms Inside Modals with ng-bootstrap",
+              "slug": "creating-forms-inside-modals-with-ng-bootstrap",
+              "updatedAt": 1523256347618
+            }
+          }
+      }
+    }
+  } 
+}
