@@ -9,3 +9,4 @@ export * from './route.service';
 export * from './route-reusable-strategy';
 export * from './logger.service';
 export * from './services';
+export * from './data';

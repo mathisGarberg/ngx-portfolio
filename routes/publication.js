@@ -11,7 +11,6 @@ router.get('/', function (req, res, next) {
         var strippedResponse = stripMediumResponse(body);
         if (!error && response.statusCode == 200) {
             var info = JSON.parse(strippedResponse)
-            // do more stuff
             res.send(info);
         }
     });

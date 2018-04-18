@@ -23,7 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     TranslateModule.forRoot(),
     NgbModule.forRoot(),
-    CoreModule,
+    CoreModule.forRoot(),
     SharedModule,
     HomeModule,
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),

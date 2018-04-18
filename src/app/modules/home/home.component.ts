@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
 import { QuoteService } from './quote.service';
-import { PostService } from '@app/core';
+import { PostService, LinkService } from '@app/core';
 
 @Component({
   selector: 'app-home',
@@ -14,10 +14,12 @@ export class HomeComponent implements OnInit {
   quote: string;
   isLoading: boolean;
   posts: any;
+  links: any;
 
   constructor(
     private quoteService: QuoteService,
-    private postService: PostService
+    private postService: PostService,
+    private linkService: LinkService
   ) { }
 
   ngOnInit() {
@@ -26,6 +28,7 @@ export class HomeComponent implements OnInit {
     //   .pipe(finalize(() => { this.isLoading = false; }))
       // .subscribe((quote: string) => { this.quote = quote; });
     this.loadPosts();
+    this.loadLinks();
   }
 
   loadPosts() {
@@ -37,6 +40,13 @@ export class HomeComponent implements OnInit {
           .map((key) => {
             return posts.references.Post[key];
           });
+      });
+  }
+
+  loadLinks() {
+    this.linkService.getLinks()
+      .subscribe((links) => {
+        this.links = links;
       });
   }
 

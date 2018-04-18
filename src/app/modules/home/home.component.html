@@ -28,13 +28,9 @@
         <div class="card-header">
           Links
         </div>
-        <!-- Card Block -->
-        <div class="card-body">
-          <p class="card-text">GitHub projects</p>
-        </div>
         <!-- List Group -->
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Medium Publications</li>
+          <li class="list-group-item" *ngFor="let link of links">{{ link.name }}</li>
         </ul>
         </div>
     </div>
