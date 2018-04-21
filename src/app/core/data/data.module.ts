@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { LinkService } from './link.service';
 
+// mocks
+
 @NgModule({
     imports: [
         CommonModule
     ],
     providers: [
-        LinkService
+        LinkService,
     ],
 })
 export class DataModule {
@@ -16,7 +18,7 @@ export class DataModule {
         return <ModuleWithProviders> {
             ngModule: DataModule,
             providers: [
-                LinkService
+                LinkService,
             ],
         };
     }

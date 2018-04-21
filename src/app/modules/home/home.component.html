@@ -23,16 +23,7 @@
       <app-loader [isLoading]="isLoading"></app-loader>
     </div>
     <div class="col-md-4">
-      <div class="card" style="max-width: 20rem;">
-        <!-- Card Header -->
-        <div class="card-header">
-          Links
-        </div>
-        <!-- List Group -->
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item" *ngFor="let link of links">{{ link.name }}</li>
-        </ul>
-        </div>
+      <app-links [links]="links"></app-links>
     </div>
   </div>
 </div>

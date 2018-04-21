@@ -11,6 +11,7 @@ import { QuoteService } from './quote.service';
 
 import { PostListComponent } from './post-list/post-list.component';
 import { PostPreviewComponent } from './post-preview/post-preview.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { PostPreviewComponent } from './post-preview/post-preview.component';
   declarations: [
     HomeComponent,
     PostListComponent,
-    PostPreviewComponent
+    PostPreviewComponent,
+    LinksComponent
   ],
   providers: [
     QuoteService

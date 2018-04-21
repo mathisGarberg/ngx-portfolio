@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private quoteService: QuoteService,
     private postService: PostService,
-    private linkService: LinkService
+    private linkService: LinkService,
   ) { }
 
   ngOnInit() {

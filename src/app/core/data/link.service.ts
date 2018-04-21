@@ -10,11 +10,13 @@ export class LinkService {
     private links = [
         {
             id: 1,
-            name: 'Github projects',
+            name: 'Medium Publications',
+            routerLink: '/medium-publications'
         },
         {
             id: 2,
-            name: 'Medium Publications'
+            name: 'Personal projects',
+            routerLink: '/github-projects'
         }
     ]
 
