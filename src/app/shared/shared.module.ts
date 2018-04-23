@@ -6,10 +6,13 @@ import { LinksComponent } from './components/links/links.component';
 
 import { PairsPipe } from './pipes/pairs.pipe';
 
+// import { ZoomModule } from 'angular-zoom';
+
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    // ZoomModule
   ],
   declarations: [
     LoaderComponent,
