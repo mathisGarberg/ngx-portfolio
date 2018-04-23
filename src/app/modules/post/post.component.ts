@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
-import { QuoteService } from './quote.service';
 import { PostService, LinkService } from '@app/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-post',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class PostComponent implements OnInit {
 
   quote: string;
   isLoading: boolean;
@@ -17,7 +16,6 @@ export class HomeComponent implements OnInit {
   links: any;
 
   constructor(
-    private quoteService: QuoteService,
     private postService: PostService,
     private linkService: LinkService,
   ) { }

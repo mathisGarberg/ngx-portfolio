@@ -11,12 +11,12 @@ export class LinkService {
         {
             id: 1,
             name: 'Medium Publications',
-            routerLink: '/medium-publications'
+            routerLink: '/post'
         },
         {
             id: 2,
             name: 'Personal projects',
-            routerLink: '/github-projects'
+            routerLink: '/project'
         }
     ]
 

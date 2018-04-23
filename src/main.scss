@@ -6,6 +6,11 @@
 // Theme variables, must be included before the libraries to allow overriding defaults
 @import "theme/theme-variables";
 
+// @import "../node_modules/bootswatch/dist/darkly/variables";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootswatch/dist/darkly/bootswatch";
+// @import "../node_modules/bootswatch/dist/darkly/bootstrap.min.css";
+
 // 3rd party libraries
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";

@@ -21,5 +21,49 @@
           }
       }
     }
-  } 
+  },
+  "projects": [
+    {
+      "_id": {
+        "$oid": "596f915e734d1d6202a6ba46"
+      },
+      "title": "Bannefilter - JavaScript",
+      "body": "Scans and censors particular words",
+      "__v": 0,
+      "image": "/assets/images/swearing.jpg",
+      "developers": "Mathis Garberg",
+      "backEnd": "Ingen",
+      "frontEnd": "HTML, CSS og JavaScript",
+      "summary": "I emnet Programmering for Web 2 fikk vi oppgave i programmere et filtreringssystem for banneord. Oppgaven skulle løses uten eksterne biblioteker og rammeverk (plain JavaScript).",
+      "contribution": "Dette var en individuell oppgave.",
+      "learningOutcome": "Dette var den første oppgaven jeg hadde i JavaScript, så jeg brukte ganske lang tid på å forstå hvordan jeg kunne utvikle løsningen. Det var heller ikke veldig mye dokumentasjon på nettet. Jeg lærte å jobbe selvstendig og gradvis bygge opp koden for løsningen til noe som fungerer.",
+      "repo": "https://github.com/mathisGarberg/Wordfilter",
+      "images": [
+          "http://i.imgur.com/aG6O6m7.png"
+      ],
+      "time": "2017-07-17T19:22:04.762Z"
+    },
+    {
+      "_id": {
+        "$oid": "596f919e734d1d6202a6ba62"
+      },
+      "title": "Video Management System - AngularJS",
+      "body": "YouTube for lecturers",
+      "image": "/assets/images/singletube.jpg",
+      "developers": "Mathis Garberg and Stian Rønningen",
+      "backEnd": "PHP and Slim",
+      "frontEnd": "HTML5, CSS3, JavaScript, AngularJS and Bootstrap",
+      "summary": "Som del av emnet WWW-Teknologi fikk vi i oppgave å programmere om oppgaven (NTNUTube) til en SPA-applikasjon (Sinlge Page Application). Systemet krever ikke at du er logget inn, men om du ønsker å legge til videoer og endre dem er du nødt til å gjøre dette.",
+      "repo": "https://bitbucket.org/stiaron/singletube",
+      "contribution": "Siden han jeg var på gruppe med ikke hadde så mye erfaring med hverken front- eller backend, var jeg stort sett ansvarlig for begge deler. Store deler av klassen valgte å bruke jQuery med Google Polymer, men siden jeg brukte AngularJS i bacheloroppgaven min, ønsket jeg å bruke det her også. På denne måten kunne jeg få enda mer erfaring med rammeverket.",
+      "learningOutcome": "Gjennom denne oppgaven fikk jeg veldig en veldig god forståelse av MVC-arkitekturen.",
+      "images": [
+          "http://i.imgur.com/PWHHz9S.png",
+          "http://i.imgur.com/nHqF7VG.png",
+          "http://i.imgur.com/F3CKFpT.png",
+          "http://i.imgur.com/hsyH8v7.png"
+      ],
+      "time": "2017-07-17T19:26:31.472Z"
+    }
+  ]
 }

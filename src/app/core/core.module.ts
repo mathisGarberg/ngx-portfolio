@@ -17,6 +17,7 @@ import { CacheInterceptor } from './http/cache.interceptor';
 import { DataModule } from './data/data.module';
 
 import { PostService } from './services/post.service';
+import { ProjectService } from './services/project.service';
 
 const CORE_PROVIDERS = [
   ...DataModule.forRoot().providers,
@@ -41,6 +42,7 @@ const CORE_PROVIDERS = [
     ErrorHandlerInterceptor,
     CacheInterceptor,
     PostService,
+    ProjectService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ApiPrefixInterceptor,

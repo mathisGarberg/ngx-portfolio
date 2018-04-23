@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
+import { LinksComponent } from './components/links/links.component';
+
+import { PairsPipe } from './pipes/pairs.pipe';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
-    LoaderComponent
+    LoaderComponent,
+    LinksComponent,
+    PairsPipe
   ],
   exports: [
-    LoaderComponent
+    LoaderComponent,
+    LinksComponent,
+    PairsPipe
   ]
 })
 export class SharedModule { }

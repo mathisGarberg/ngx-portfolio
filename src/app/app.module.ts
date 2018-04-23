@@ -11,7 +11,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { environment } from '@env/environment';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
-import { HomeModule } from './modules/home/home.module';
+import { PostModule } from './modules/post/post.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -25,7 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     NgbModule.forRoot(),
     CoreModule.forRoot(),
     SharedModule,
-    HomeModule,
+    PostModule,
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule
   ],

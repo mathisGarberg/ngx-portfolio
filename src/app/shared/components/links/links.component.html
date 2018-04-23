@@ -7,7 +7,7 @@
   <!-- List Group -->
   <ul class="list-group list-group-flush">
     <li class="list-group-item" *ngFor="let link of links">
-      <a href="#">{{ link.name }}</a>
+      <a [routerLink]="link.routerLink">{{ link.name }}</a>
     </li>
   </ul>
 </div>
