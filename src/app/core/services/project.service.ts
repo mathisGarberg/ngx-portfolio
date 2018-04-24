@@ -18,7 +18,7 @@ export class ProjectService {
 
   getAllProjects(): Observable<any> {
     return this.httpClient
-      .cache()
+      // .cache()
       .get(routes.projects)
       .pipe(
         map((body: any) => body),
