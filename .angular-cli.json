@@ -22,7 +22,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "main.scss"
+        "main.scss",
+        "../node_modules/videogular2/fonts/videogular.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

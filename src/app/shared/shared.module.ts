@@ -6,12 +6,22 @@ import { LinksComponent } from './components/links/links.component';
 
 import { PairsPipe } from './pipes/pairs.pipe';
 
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
+// import {SingleMediaPlayer} from './single-media-player';
+
 // import { ZoomModule } from 'angular-zoom';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
     // ZoomModule
   ],
   declarations: [

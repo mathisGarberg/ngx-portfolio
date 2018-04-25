@@ -2,4 +2,12 @@
  * Global application theme.
  * Framework overrides and customization goes here.
  */
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
 
+* {
+    font-family: 'Nunito', Times, serif;
+}
+
+.large {
+    font-size: 1.2rem;
+}

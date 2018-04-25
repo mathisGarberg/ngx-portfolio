@@ -17,7 +17,8 @@ import { ProjectPreviewComponent } from './project-preview/project-preview.compo
     TranslateModule,
     SharedModule,
     Angulartics2Module,
-    ProjectRoutingModule
+    ProjectRoutingModule,
+
   ],
   declarations: [
     ProjectComponent,

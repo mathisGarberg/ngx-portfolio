@@ -27,4 +27,5 @@ import { PostPreviewComponent } from './post-preview/post-preview.component';
   ],
   providers: []
 })
-export class PostModule { }
+export class PostModule {
+}
