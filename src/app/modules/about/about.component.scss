@@ -4,3 +4,35 @@
     display: flex;
     align-items: center;
 }
+
+.hero-arrow svg polygon {
+    fill: #3b3a3a;
+}
+
+.hero-arrow {
+    animation: bounce 0.6s infinite alternate;
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+}
+
+.hero-arrow svg {
+    height: 2.75rem;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }

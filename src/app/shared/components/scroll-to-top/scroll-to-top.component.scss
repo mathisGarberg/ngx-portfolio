@@ -10,3 +10,13 @@
     opacity: 1;
     transition: all .2s ease-in-out;
 }
+
+.elevator {
+    cursor: pointer;
+}
+
+.elevator svg {
+    height: 3rem;
+    fill: #c9c9c9;
+    transform: rotate(180deg);
+}
