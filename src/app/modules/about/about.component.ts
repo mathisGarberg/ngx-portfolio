@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { environment } from '@env/environment';
+import { SocialLinksService, SkillService } from '@app/core';
 
 @Component({
   selector: 'app-about',
@@ -10,9 +11,31 @@ import { environment } from '@env/environment';
 export class AboutComponent implements OnInit {
 
   version: string = environment.version;
+  socialLinks: any;
+  skills: any;
 
-  constructor() { }
+  constructor(
+    private socialLinksService: SocialLinksService,
+    private skillService: SkillService
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.loadSocialLinks();
+    this.loadSkills();
+  }
+
+  loadSocialLinks() {
+    this.socialLinksService.getAll()
+      .subscribe((socialLinks) => {
+        this.socialLinks = socialLinks;
+      });
+  }
+
+  loadSkills() {
+    this.skillService.getAll()
+      .subscribe((skills) => {
+        this.skills = skills;
+      });
+  }
 
 }

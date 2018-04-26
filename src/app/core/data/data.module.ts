@@ -2,6 +2,8 @@ import { NgModule, ModuleWithProviders  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LinkService } from './link.service';
+import { SocialLinksService } from './social-links.service';
+import { SkillService } from './skill.service';
 
 // mocks
 
@@ -11,6 +13,8 @@ import { LinkService } from './link.service';
     ],
     providers: [
         LinkService,
+        SocialLinksService,
+        SkillService
     ],
 })
 export class DataModule {
@@ -19,6 +23,8 @@ export class DataModule {
             ngModule: DataModule,
             providers: [
                 LinkService,
+                SocialLinksService,
+                SkillService
             ],
         };
     }

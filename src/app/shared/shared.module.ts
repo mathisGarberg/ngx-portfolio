@@ -11,6 +11,7 @@ import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
+import { FooterComponent } from './components/footer/footer.component';
 
 // import {SingleMediaPlayer} from './single-media-player';
 
@@ -30,12 +31,14 @@ import {VgBufferingModule} from 'videogular2/buffering';
     LoaderComponent,
     LinksComponent,
     PairsPipe,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    FooterComponent
   ],
   exports: [
     LoaderComponent,
     LinksComponent,
     ScrollToTopComponent,
+    FooterComponent,
     PairsPipe,
   ]
 })

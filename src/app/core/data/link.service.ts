@@ -18,7 +18,7 @@ export class LinkService {
             name: 'Personal projects',
             routerLink: '/project'
         }
-    ]
+    ];
 
     private linkArray: any[];
 

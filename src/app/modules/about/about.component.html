@@ -1,5 +1,3 @@
-
-
 <main class="main">
     <article class="container">
         <div class="row">
@@ -36,57 +34,88 @@
             </div>
             <div class="col-xs-12 col-md-6">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-12 mb-xs-20 mb-md-40">
-                        <h4>Kommunikasjon</h4>
-                        <p>
-                            I realize the importance of good communication. I use tools like Slack to make sure we’re always on the same page.
-                        </p>
+                    <div class="col-xs-12 col-sm-6 col-md-12 mb-xs-20 mb-md-40" *ngFor="let skill of skills">
+                        <h4>{{ skill.headline }}</h4>
+                        <p>{{ skill.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-xs-20 mb-sm-40 mb-4">
+            <div class="col-xs-12 col-md-12"> 
+                <header class="section-header">
+                    <h2 class="section-header-title">Sosiale Medier</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 mb-xs-20" *ngFor="let socialLink of socialLinks">
+                        <span class="extra-large">
+                            <a [href]="socialLink.url" class="link-dark">{{ socialLink.name }}</a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-10 col-xs-12">
-                <vg-player>
-                    <vg-overlay-play></vg-overlay-play>
-                    <vg-buffering></vg-buffering>
+                <header class="section-header">
+                    <h2 class="section-header-title">Hobbier</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 mb-xs-80 mb-md-0">
+                        <p class="extra-large">
+                            Jeg er en aktiv person som liker å holde på med mye forskjellig. 
+                            Gjennom studieperioden min på NTNU i Gjøvik var jeg bartender, 
+                            fotballspiller, varatillitsmann og amerikansk fotballspiller. 
+                            Amerikansk fotball spilte jeg for det lokale laget, Gjøvik Swans. 
+                            Siden alle kampene våre filmes og legges ut, satte jeg sammen 
+                            noen av høydepunktene mine fra fjorårets sesong i videoen nedenfor
+                            (Warning! The following fotage may contain violent content. Viewer
+                            discretion adviced).
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <vg-player>
+                            <vg-overlay-play></vg-overlay-play>
+                            <vg-buffering></vg-buffering>
 
-                    <vg-scrub-bar>
-                        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                        <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-                    </vg-scrub-bar>
-                
-                    <vg-controls>
-                        <vg-play-pause></vg-play-pause>
-                        <vg-playback-button></vg-playback-button>
-                
-                        <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-                
-                        <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
-                
-                        <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
-                        <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-                
-                        <vg-track-selector></vg-track-selector>
-                        <vg-mute></vg-mute>
-                        <vg-volume></vg-volume>
-                
-                        <vg-fullscreen></vg-fullscreen>
-                    </vg-controls>
-                
-                    <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
-                        <source src="../../../assets/videoplayback.mp4" type="video/mp4">
-                        <!-- <source src="http://static.videogular.com/assets/videos/videogular.ogg" type="video/ogg">
-                        <source src="http://static.videogular.com/assets/videos/videogular.webm" type="video/webm"> -->
-                
-                        <track kind="subtitles" label="English" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en" default>
-                        <track kind="subtitles" label="Español" src="http://static.videogular.com/assets/subs/pale-blue-dot-es.vtt" srclang="es">
-                    </video>
-                </vg-player>
+                            <vg-scrub-bar>
+                                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                                <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                            </vg-scrub-bar>
+                    
+                            <vg-controls>
+                                <vg-play-pause></vg-play-pause>
+                                <vg-playback-button></vg-playback-button>
+                        
+                                <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+                        
+                                <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+                        
+                                <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+                                <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+                        
+                                <vg-track-selector></vg-track-selector>
+                                <vg-mute></vg-mute>
+                                <vg-volume></vg-volume>
+                        
+                                <vg-fullscreen></vg-fullscreen>
+                            </vg-controls>
+                    
+                            <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
+                                <source src="../../../assets/videoplayback.mp4" type="video/mp4">
+                                <!-- <source src="http://static.videogular.com/assets/videos/videogular.ogg" type="video/ogg">
+                                <source src="http://static.videogular.com/assets/videos/videogular.webm" type="video/webm"> -->
+                        
+                                <track kind="subtitles" label="English" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en" default>
+                                <track kind="subtitles" label="Español" src="http://static.videogular.com/assets/subs/pale-blue-dot-es.vtt" srclang="es">
+                            </video>
+                        </vg-player>
+                    </div>
+                </div>  
             </div>
-            
         </div>
-        
     </article>
 </main>
 
