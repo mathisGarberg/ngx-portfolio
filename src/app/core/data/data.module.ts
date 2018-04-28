@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LinkService } from './link.service';
+import { SectionService } from './section.service';
 import { SocialLinksService } from './social-links.service';
 import { SkillService } from './skill.service';
 import { CategoryService } from './category.service';
@@ -13,7 +13,7 @@ import { CategoryService } from './category.service';
         CommonModule
     ],
     providers: [
-        LinkService,
+        SectionService,
         SocialLinksService,
         SkillService,
         CategoryService
@@ -24,7 +24,7 @@ export class DataModule {
         return <ModuleWithProviders> {
             ngModule: DataModule,
             providers: [
-                LinkService,
+                SectionService,
                 SocialLinksService,
                 SkillService,
                 CategoryService

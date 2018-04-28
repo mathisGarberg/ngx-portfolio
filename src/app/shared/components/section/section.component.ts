@@ -1,13 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-links',
-  templateUrl: './links.component.html',
-  styleUrls: ['./links.component.scss']
+  selector: 'app-section',
+  templateUrl: './section.component.html',
+  styleUrls: ['./section.component.scss']
 })
-export class LinksComponent implements OnInit {
+export class SectionComponent implements OnInit {
 
-  @Input() links: any;
+  @Input() section: any;
   hiddenItems: any[];
   displayedItems: any[];
   isCollapsed = true;
@@ -16,14 +16,12 @@ export class LinksComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (this.links.links.length >= 3) {
-      this.displayedItems = this.createDisplayedArray(this.links.links)
-      this.hiddenItems = this.createHiddenArray(this.links.links);
+    if (this.section.links.length >= 3) {
+      this.displayedItems = this.createDisplayedArray(this.section.links)
+      this.hiddenItems = this.createHiddenArray(this.section.links);
     } else {
-      this.displayedItems = this.links.links;
+      this.displayedItems = this.section.links;
     }
-
-    console.log(this.links.links);
   }
 
   createDisplayedArray(items: any) {
@@ -31,7 +29,7 @@ export class LinksComponent implements OnInit {
   }
 
   createHiddenArray(items: any) {
-    return items.slice(3, this.links.links.length);
+    return items.slice(3, this.section.links.length);
   }
 
   toggleContent() {

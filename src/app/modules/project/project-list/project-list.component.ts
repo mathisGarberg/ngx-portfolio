@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
-import { ProjectService, LinkService } from '@app/core';
+import { ProjectService, SectionService } from '@app/core';
 import { Project } from '@app/shared';
 
 @Component({

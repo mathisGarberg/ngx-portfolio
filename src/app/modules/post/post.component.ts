@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
-import { PostService, LinkService } from '@app/core';
+import { PostService, SectionService } from '@app/core';
 
 @Component({
   selector: 'app-post',
@@ -13,11 +13,11 @@ export class PostComponent implements OnInit {
   quote: string;
   isLoading: boolean;
   posts: any;
-  links: any;
+  sections: any;
 
   constructor(
     private postService: PostService,
-    private linkService: LinkService,
+    private sectionService: SectionService,
   ) { }
 
   ngOnInit() {
@@ -26,7 +26,7 @@ export class PostComponent implements OnInit {
     //   .pipe(finalize(() => { this.isLoading = false; }))
       // .subscribe((quote: string) => { this.quote = quote; });
     this.loadPosts();
-    this.loadLinks();
+    this.loadSections();
   }
 
   loadPosts() {
@@ -41,10 +41,10 @@ export class PostComponent implements OnInit {
       });
   }
 
-  loadLinks() {
-    this.linkService.getLinks()
-      .subscribe((links) => {
-        this.links = links;
+  loadSections() {
+    this.sectionService.getLinks()
+      .subscribe((sections) => {
+        this.sections = sections;
       });
   }
 

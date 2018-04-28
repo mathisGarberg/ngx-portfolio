@@ -4,8 +4,8 @@
         <router-outlet></router-outlet>
       </div>
       <aside class="sidebar col-xs-12 col-md-3">
-        <div *ngFor="let link of links">
-            <app-links [links]="link"></app-links>
+        <div *ngFor="let section of sections">
+            <app-section [section]="section"></app-section>
         </div>
       </aside>
     </div>

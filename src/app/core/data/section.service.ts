@@ -5,7 +5,7 @@ import 'rxjs/add/observable/of';
 let counter = 0;
 
 @Injectable()
-export class LinkService {
+export class SectionService {
 
     private sections = [
         {
@@ -48,19 +48,19 @@ export class LinkService {
         }
     ];
 
-    private linkArray: any[];
+    private sectionArray: any[];
 
     getLinks(): Observable<any> {
         return Observable.of(this.sections);
     }
 
     getLinkArray(): Observable<any[]> {
-        return Observable.of(this.linkArray);
+        return Observable.of(this.sectionArray);
     }
 
     getLink(): Observable<any> {
-        counter = (counter + 1) % this.linkArray.length;
-        return Observable.of(this.linkArray[counter]);
+        counter = (counter + 1) % this.sectionArray.length;
+        return Observable.of(this.sectionArray[counter]);
     }
 
 }

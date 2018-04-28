@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
-import { LinkService } from '@app/core';
+import { SectionService } from '@app/core';
 
 @Component({
   selector: 'app-project',
@@ -10,10 +10,10 @@ import { LinkService } from '@app/core';
 })
 export class ProjectComponent implements OnInit {
 
-  links: any;
+  sections: any;
 
   constructor(
-    private linkService: LinkService,
+    private sectionService: SectionService,
   ) { }
 
   ngOnInit() {
@@ -21,10 +21,9 @@ export class ProjectComponent implements OnInit {
   }
 
   loadLinks() {
-    this.linkService.getLinks()
+    this.sectionService.getLinks()
       .subscribe((sections) => {
-        // console.log(links);
-        this.links = sections;
+        this.sections = sections;
       });
   }
 
