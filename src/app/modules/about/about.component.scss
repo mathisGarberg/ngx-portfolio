@@ -36,3 +36,14 @@
       transform: translateY(-15px);
     }
   }
+
+  @media (min-width: 1000px) {
+    .hero {
+      padding-top: 12rem;
+    }
+
+    .col-md-10 {
+      flex-basis: 83.333333%;
+      max-width: 83.333333%;
+    }
+  }

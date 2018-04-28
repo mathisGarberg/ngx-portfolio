@@ -4,6 +4,7 @@ import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LinksComponent } from './components/links/links.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { PairsPipe } from './pipes/pairs.pipe';
 
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    NgbModule.forRoot(),
     // ZoomModule
   ],
   declarations: [
@@ -40,6 +42,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ScrollToTopComponent,
     FooterComponent,
     PairsPipe,
+    NgbModule
   ]
 })
 export class SharedModule { }

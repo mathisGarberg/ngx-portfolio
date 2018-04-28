@@ -1,10 +1,14 @@
 {
   "APP_NAME": "ngx-portfolio",
-  "About": "Om",
+  "About Me": "Om Meg",
   "Hello world !": "Hallo verden!",
   "Home": "Hjem",
   "Version": "Versjon",
   "Links": "Linker",
   "Medium Publications": "Medium Publikasjoner",
-  "Hello! My name is Mathis Garberg, a fullstack developer in Oslo, Norway": "Hei! Mitt navn er Mathis Garberg, og jeg er en fullstack utvikler i Oslo, Norge."
+  "Hobbies": "Hobbier",
+  "Social Media": "Sosiale Medier",
+  "Hello! My name is Mathis Garberg, a fullstack developer in Oslo, Norway": "Hei! Mitt navn er Mathis Garberg, og jeg er en fullstack utvikler i Oslo, Norge.",
+  "Skills": "Ferdigheter",
+  "Throughout my education, I've gained experience in a broad range of web technologies. Among my primary skills are:": "Gjennom en Bachelor i Webutvikling ved NTNU i Gjøvik har jeg utviklet en ekspertise innenfor en rekke Webteknologier. Blant ferdighetene mine er"
 }

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LinkService } from './link.service';
 import { SocialLinksService } from './social-links.service';
 import { SkillService } from './skill.service';
+import { CategoryService } from './category.service';
 
 // mocks
 
@@ -14,7 +15,8 @@ import { SkillService } from './skill.service';
     providers: [
         LinkService,
         SocialLinksService,
-        SkillService
+        SkillService,
+        CategoryService
     ],
 })
 export class DataModule {
@@ -24,7 +26,8 @@ export class DataModule {
             providers: [
                 LinkService,
                 SocialLinksService,
-                SkillService
+                SkillService,
+                CategoryService
             ],
         };
     }

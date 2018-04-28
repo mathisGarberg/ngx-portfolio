@@ -7,23 +7,51 @@ let counter = 0;
 @Injectable()
 export class LinkService {
 
-    private links = [
+    private sections = [
         {
-            id: 1,
-            name: 'Medium Publications',
-            routerLink: '/post'
+            title: 'Category',
+            links: [
+                {
+                    id: 1,
+                    name: 'Min'
+                },
+                {
+                    id: 2,
+                    name: 'Din'
+                },
+                {
+                    id: 1,
+                    name: 'Fin'
+                }
+            ]
         },
         {
-            id: 2,
-            name: 'Personal projects',
-            routerLink: '/project'
+            title: 'Tags',
+            links: [
+                {
+                    id: 1,
+                    name: 'fest'
+                },
+                {
+                    id: 2,
+                    name: 'pest'
+                },
+                {
+                    id: 1,
+                    name: 'rest'
+                },
+                {
+                    id: 2,
+                    name: 'pest'
+                }
+            ]
         }
     ];
 
     private linkArray: any[];
 
     getLinks(): Observable<any> {
-        return Observable.of(this.links);
+        return Observable.of(this.sections);
     }
 
     getLinkArray(): Observable<any[]> {

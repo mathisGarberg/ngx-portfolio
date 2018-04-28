@@ -22,8 +22,9 @@ export class ProjectComponent implements OnInit {
 
   loadLinks() {
     this.linkService.getLinks()
-      .subscribe((links) => {
-        this.links = links;
+      .subscribe((sections) => {
+        // console.log(links);
+        this.links = sections;
       });
   }
 

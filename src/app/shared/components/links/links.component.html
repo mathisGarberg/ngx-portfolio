@@ -1,13 +1,22 @@
-
-<div class="card" style="max-width: 20rem;">
-  <!-- Card Header -->
-  <div class="card-header">
-    Links
+<div class="row" style="margin-bottom: 2.4rem">
+  <div class="col-xs-12 col-sm-4 col-md-12 mb-xs-40 mb-sm-60">
+    <nav class="filters">
+      <div class="filter-header">
+        <h3>{{ links.title }}</h3>
+      </div>
+      <ul class="filter-list">
+        <li class="filter-list-item" *ngFor="let link of displayedItems">
+          {{ link.name }}
+        </li>
+        <li [ngbCollapse]="isCollapsed" *ngFor="let hiddenItem of hiddenItems">
+          {{ hiddenItem.name }}
+        </li>
+        <li class="show-more" [hidden]="links.links.length <= 3">
+          <a class="link" (click)="toggleContent()">
+            {{ collapseText }}
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <!-- List Group -->
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item" *ngFor="let link of links">
-      <a [routerLink]="link.routerLink">{{ link.name }}</a>
-    </li>
-  </ul>
 </div>

@@ -3,8 +3,10 @@
       <div class="col-md-9">
         <router-outlet></router-outlet>
       </div>
-      <div class="col-md-3">
-        <app-links [links]="links"></app-links>
-      </div>
+      <aside class="sidebar col-xs-12 col-md-3">
+        <div *ngFor="let link of links">
+            <app-links [links]="link"></app-links>
+        </div>
+      </aside>
     </div>
 </div>

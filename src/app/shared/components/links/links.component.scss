@@ -1,0 +1,27 @@
+li {
+    // display: list-item;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.4rem;
+}
+
+.filter-header > h3 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #c9c9c9;
+    margin: 0;
+}
+
+.filter-list {
+    margin: 0;
+    padding: 0;
+}
+
+.show-more  .link{
+    color: #c9c9c9;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    cursor: pointer;
+}

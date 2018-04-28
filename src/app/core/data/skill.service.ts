@@ -10,19 +10,16 @@ export class SkillService {
   private skills = [
     {
       headline: 'Frontend utvikling',
-      description: `Lorem ipsum`
+      description: `Det er uten tvil frontend utvikling som jeg har mest erfaring med. HTML, 
+                    CSS og JavaScript var noe av det første vi lærte på studiet jeg gikk.`
     },
     {
       headline: 'Backend utvikling',
-      description: `Lorem ipsum`
-    },
-    {
-      headline: 'Backend utvikling',
-      description: `Lorem ipsum`
+      description: `Stor erfaring med PHP, MySQL. Bruker for tiden mest Node.`
     },
     {
       headline: 'Kommunikasjon',
-      description: `Lorem ipsum`
+      description: `Det er ...`
     },
     {
       headline: 'Angular',
