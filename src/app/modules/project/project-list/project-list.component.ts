@@ -12,7 +12,7 @@ import { Project } from '@app/shared';
 export class ProjectListComponent implements OnInit {
 
   projects: Project[];
-  isLoading: boolean;
+  isLoading = true;
 
   constructor(
     private projectService: ProjectService
@@ -26,6 +26,7 @@ export class ProjectListComponent implements OnInit {
     this.projectService.getAllProjects()
       .pipe(finalize(() => { this.isLoading = false; }))
       .subscribe((projects: any) => {
+        console.log(projects);
         this.projects = projects;
       });
   }

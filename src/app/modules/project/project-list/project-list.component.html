@@ -1,6 +1,7 @@
-<h2>Prosjekter</h2>
+<h2 translate>Projects</h2>
 
 <app-project-preview
+  [hidden]="isLoading"
   *ngFor="let project of projects | pairs"
   [project]="project">
 </app-project-preview>

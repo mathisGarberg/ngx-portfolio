@@ -26,15 +26,36 @@ export class SectionService {
             ]
         },
         {
-            title: 'Tags',
+            title: 'Technologies',
             links: [
                 {
                     id: 1,
-                    name: 'fest'
+                    name: 'AngularJS'
+                },
+                {
+                    id: 2,
+                    name: 'Plain JavaScript'
+                },
+                {
+                    id: 1,
+                    name: 'rest'
                 },
                 {
                     id: 2,
                     name: 'pest'
+                }
+            ]
+        },
+        {
+            title: 'Tags',
+            links: [
+                {
+                    id: 1,
+                    name: 'AngularJS'
+                },
+                {
+                    id: 2,
+                    name: 'Plain JavaScript'
                 },
                 {
                     id: 1,

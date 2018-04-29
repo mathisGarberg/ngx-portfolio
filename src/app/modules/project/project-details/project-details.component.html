@@ -1,1 +1,31 @@
-<!-- <p data-height="500" data-theme-id="dark" data-slug-hash="ayZbrm" data-default-tab="result" data-user="PI_Mathis" data-embed-version="2" data-pen-title="Profanity Filter" class="codepen">See the Pen <a href="https://codepen.io/PI_Mathis/pen/ayZbrm/">Profanity Filter</a> by Mathis (<a href="https://codepen.io/PI_Mathis">@PI_Mathis</a>) on <a href="https://codepen.io">CodePen</a>.</p> -->
+<div class="container mt-xs-20 mt-sm-40 mb-xs-120">
+    <div class="row">
+        <article class="project col-xs-12 col-md-12">
+            <figure class="image text-center mb-xs-40">
+                <span class="image-content">
+                    <img [src]="project?.image" alt="" class="image-img img-fluid">
+                </span>
+            </figure>
+            <header class="header-title">
+                <time class="date">
+                    {{ project?.year }}
+                </time>
+                <h2 class="title">
+                    {{ project?.title }}
+                </h2>
+            </header>
+            <section class="project-body user-content" *ngFor="let paragraph of project?.paragraphs">
+                <!-- Loop over paragraphs -->
+                <p>{{ paragraph }}</p>
+                <div class="row mt-xs-80 mb-xs-20 mb-md-60" *ngFor="let image of project?.images">
+                    <!-- Loop over images -->
+                    <figure class="image">
+                        <div class="image-content">
+                           <img [src]="image" alt="" class="image-img img-fluid"> 
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </article>
+    </div>
+</div>

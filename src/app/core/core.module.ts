@@ -18,6 +18,7 @@ import { DataModule } from './data/data.module';
 
 import { PostService } from './services/post.service';
 import { ProjectService } from './services/project.service';
+import { TagService } from './services/tag.service';
 
 const CORE_PROVIDERS = [
   ...DataModule.forRoot().providers,
@@ -43,6 +44,7 @@ const CORE_PROVIDERS = [
     CacheInterceptor,
     PostService,
     ProjectService,
+    TagService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ApiPrefixInterceptor,
