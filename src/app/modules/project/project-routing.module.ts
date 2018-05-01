@@ -6,6 +6,9 @@ import { ProjectComponent } from './project.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 
+import { CategoryListComponent } from './category-list/category-list.component';
+
+
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
   { 
@@ -25,6 +28,10 @@ const routes: Routes = [
       {
         path: 'details/:id',
         component: ProjectDetailsComponent
+      },
+      {
+        path: 'category/:id',
+        component: CategoryListComponent
       }
     ]
   }

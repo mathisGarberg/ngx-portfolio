@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { SectionService } from './section.service';
 import { SocialLinksService } from './social-links.service';
 import { SkillService } from './skill.service';
-import { CategoryService } from './category.service';
 
 // mocks
 
@@ -16,7 +15,6 @@ import { CategoryService } from './category.service';
         SectionService,
         SocialLinksService,
         SkillService,
-        CategoryService
     ],
 })
 export class DataModule {
@@ -27,7 +25,6 @@ export class DataModule {
                 SectionService,
                 SocialLinksService,
                 SkillService,
-                CategoryService
             ],
         };
     }

@@ -1,0 +1,7 @@
+<app-project-preview
+  [hidden]="isLoading"
+  *ngFor="let project of projects | pairs"
+  [project]="project">
+</app-project-preview>
+
+<app-loader [isLoading]="isLoading"></app-loader>

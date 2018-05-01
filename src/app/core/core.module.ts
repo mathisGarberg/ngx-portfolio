@@ -19,6 +19,7 @@ import { DataModule } from './data/data.module';
 import { PostService } from './services/post.service';
 import { ProjectService } from './services/project.service';
 import { TagService } from './services/tag.service';
+import { CategoryService } from './services/category.service';
 
 const CORE_PROVIDERS = [
   ...DataModule.forRoot().providers,
@@ -34,7 +35,7 @@ const CORE_PROVIDERS = [
   ],
   declarations: [
     HeaderComponent,
-    ShellComponent
+    ShellComponent,
   ],
   providers: [
     I18nService,
@@ -45,6 +46,7 @@ const CORE_PROVIDERS = [
     PostService,
     ProjectService,
     TagService,
+    CategoryService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ApiPrefixInterceptor,

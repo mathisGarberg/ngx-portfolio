@@ -9,7 +9,8 @@ import { ProjectComponent } from './project.component';
 
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ProjectListComponent } from './project-list/project-list.component';
-import { ProjectPreviewComponent } from './project-preview/project-preview.component';
+import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
+import { CategoryListComponent } from './category-list/category-list.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { ProjectPreviewComponent } from './project-preview/project-preview.compo
     ProjectComponent,
     ProjectDetailsComponent,
     ProjectListComponent,
-    ProjectPreviewComponent
+    ProjectPreviewComponent,
+    CategoryListComponent,
   ],
   providers: []
 })

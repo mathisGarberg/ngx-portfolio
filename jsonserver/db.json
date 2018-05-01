@@ -116,5 +116,105 @@
       ],
       "time": "2017-07-17T19:22:04.762Z"
     }
+  ],
+  "category": [
+    {
+      "id": "web-development",
+      "projects": [
+        {
+          "id": "7893759853m73n2d348j433m",
+          "title": "2D Breakout Game",
+          "body": "Tetris",
+          "year": 2018,
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/breakout-game.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        },
+        {
+          "id": "7893759853m73n2d348j433k",
+          "title": "Tetris - JavaScript",
+          "body": "Tetris",
+          "year": 2018,
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/tetris.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        }
+      ]
+    },
+    {
+      "id": "games",
+      "projects": [
+        {
+          "id": "7893759853m73n2d348j433m",
+          "title": "2D Breakout Game",
+          "body": "Tetris",
+          "year": 2018,
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/breakout-game.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        },
+        {
+          "id": "7893759853m73n2d348j433k",
+          "title": "Tetris - JavaScript",
+          "body": "Tetris",
+          "year": 2018,
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/tetris.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        }
+      ]
+    }
   ]
 }

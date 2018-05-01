@@ -13,15 +13,18 @@ export class SectionService {
             links: [
                 {
                     id: 1,
-                    name: 'Min'
+                    name: 'Games',
+                    link: 'games'
                 },
                 {
                     id: 2,
-                    name: 'Din'
+                    name: 'Web Development',
+                    link: 'web-development'
                 },
                 {
                     id: 1,
-                    name: 'Fin'
+                    name: 'Fin',
+                    link: ''
                 }
             ]
         },
@@ -30,19 +33,23 @@ export class SectionService {
             links: [
                 {
                     id: 1,
-                    name: 'AngularJS'
+                    name: 'AngularJS',
+                    link: ''
                 },
                 {
                     id: 2,
-                    name: 'Plain JavaScript'
+                    name: 'Plain JavaScript',
+                    link: ''
                 },
                 {
                     id: 1,
-                    name: 'rest'
+                    name: 'rest',
+                    link: ''
                 },
                 {
                     id: 2,
-                    name: 'pest'
+                    name: 'pest',
+                    link: ''
                 }
             ]
         },
@@ -51,19 +58,23 @@ export class SectionService {
             links: [
                 {
                     id: 1,
-                    name: 'AngularJS'
+                    name: 'AngularJS',
+                    link: ''
                 },
                 {
                     id: 2,
-                    name: 'Plain JavaScript'
+                    name: 'Plain JavaScript',
+                    link: ''
                 },
                 {
                     id: 1,
-                    name: 'rest'
+                    name: 'rest',
+                    link: ''
                 },
                 {
                     id: 2,
-                    name: 'pest'
+                    name: 'pest',
+                    link: ''
                 }
             ]
         }
