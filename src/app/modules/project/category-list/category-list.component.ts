@@ -22,8 +22,10 @@ export class CategoryListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log('Biip');
-    this.loadProjects();
+    this.route.params.subscribe(params => {
+      this.loadProjects();
+    });
+    
   }
 
   loadProjects() {

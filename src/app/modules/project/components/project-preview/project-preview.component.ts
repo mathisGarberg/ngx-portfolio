@@ -13,6 +13,7 @@ export class ProjectPreviewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.project);
   }
 
 }

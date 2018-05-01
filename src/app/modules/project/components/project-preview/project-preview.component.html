@@ -1,4 +1,4 @@
-<div class="row fadeIn">
+<div class="row fadeIn" *ngIf="project">
     <div class="col-md-6">
         <a [routerLink]="['/project/details', project[0].id]">
             <div class="image-container">

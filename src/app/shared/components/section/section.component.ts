@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-section',
@@ -13,7 +14,7 @@ export class SectionComponent implements OnInit {
   isCollapsed = true;
   collapseText = (this.isCollapsed ? 'Vis alle' : 'Gjem alle');
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     if (this.section.links.length >= 3) {
@@ -36,6 +37,5 @@ export class SectionComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
     this.collapseText = this.isCollapsed ? 'Vis alt' : 'Gjem';
   }
-
 
 }

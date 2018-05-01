@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import { LoaderComponent } from './components/loader/loader.component';
-import { SectionComponent } from './components/section/section.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SectionComponent } from './components/section/section.component';
 
 import { PairsPipe } from './pipes/pairs.pipe';
 
@@ -31,18 +31,18 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   declarations: [
     LoaderComponent,
-    SectionComponent,
     PairsPipe,
     ScrollToTopComponent,
-    FooterComponent
+    FooterComponent,
+    SectionComponent
   ],
   exports: [
     LoaderComponent,
-    SectionComponent,
     ScrollToTopComponent,
     FooterComponent,
     PairsPipe,
-    NgbModule
+    NgbModule,
+    SectionComponent
   ]
 })
 export class SharedModule { }

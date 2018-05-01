@@ -20,11 +20,6 @@ export class SectionService {
                     id: 2,
                     name: 'Web Development',
                     link: 'web-development'
-                },
-                {
-                    id: 1,
-                    name: 'Fin',
-                    link: ''
                 }
             ]
         },

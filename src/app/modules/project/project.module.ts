@@ -26,7 +26,7 @@ import { CategoryListComponent } from './category-list/category-list.component';
     ProjectDetailsComponent,
     ProjectListComponent,
     ProjectPreviewComponent,
-    CategoryListComponent,
+    CategoryListComponent
   ],
   providers: []
 })
