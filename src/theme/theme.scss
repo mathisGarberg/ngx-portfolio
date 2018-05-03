@@ -17,7 +17,8 @@
 }
 
 a {
-    color: #c9c9c9;
+    // color: #c9c9c9;
+    color: inherit;
     transition: all 0.4s linear;
 }
 
@@ -29,6 +30,15 @@ a:hover, a:focus {
 .fadeIn {
     opacity: 0;
     animation: fadeIn 1.8s forwards;
+}
+
+
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #c9c9c9;
+    margin: 0;
 }
 
 @keyframes fadeIn {

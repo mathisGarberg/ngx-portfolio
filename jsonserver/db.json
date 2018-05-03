@@ -28,6 +28,10 @@
       "title": "Bannefilter - JavaScript",
       "body": "Scans and censors particular words",
       "year": 2014,
+      "tags": [
+        "JavaScript",
+        "jQuery"
+      ],
       "roles": [
         "Frontend Development"
       ],
@@ -50,6 +54,10 @@
       "title": "Video Management System - AngularJS",
       "body": "YouTube for lecturers",
       "year": 2017,
+      "tags": [
+        "JavaScript",
+        "jQuery"
+      ],
       "roles": [
         "Frontend Development",
         "Backend Development"
@@ -77,6 +85,10 @@
       "title": "Tetris - JavaScript",
       "body": "Tetris",
       "year": 2018,
+      "tags": [
+        "JavaScript",
+        "jQuery"
+      ],
       "roles": [
         "Frontend Development"
       ],
@@ -99,6 +111,10 @@
       "title": "2D Breakout Game",
       "body": "Tetris",
       "year": 2018,
+      "tags": [
+        "JavaScript",
+        "jQuery"
+      ],
       "roles": [
         "Frontend Development"
       ],
@@ -126,6 +142,10 @@
           "title": "2D Breakout Game",
           "body": "Tetris",
           "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
           "roles": [
             "Frontend Development"
           ],
@@ -148,6 +168,10 @@
           "title": "Tetris - JavaScript",
           "body": "Tetris",
           "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
           "roles": [
             "Frontend Development"
           ],
@@ -175,6 +199,10 @@
           "title": "2D Breakout Game",
           "body": "Tetris",
           "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
           "roles": [
             "Frontend Development"
           ],
@@ -197,6 +225,186 @@
           "title": "Tetris - JavaScript",
           "body": "Tetris",
           "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/tetris.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        }
+      ]
+    }
+  ],
+  "tag": [
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "projects": [
+        {
+          "id": "7893759853m73n2d348j433m",
+          "title": "2D Breakout Game",
+          "body": "Tetris",
+          "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/breakout-game.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        },
+        {
+          "id": "7893759853m73n2d348j433k",
+          "title": "Tetris - JavaScript",
+          "body": "Tetris",
+          "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/tetris.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        }
+      ]
+    },
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "projects": [
+        {
+          "id": "7893759853m73n2d348j433m",
+          "title": "2D Breakout Game",
+          "body": "Tetris",
+          "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/breakout-game.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        },
+        {
+          "id": "7893759853m73n2d348j433k",
+          "title": "Tetris - JavaScript",
+          "body": "Tetris",
+          "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/tetris.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        }
+      ]
+    }, 
+    {
+      "id": "angular",
+      "name": "Angular",
+      "projects": [
+        {
+          "id": "7893759853m73n2d348j433m",
+          "title": "2D Breakout Game",
+          "body": "Tetris",
+          "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
+          "roles": [
+            "Frontend Development"
+          ],
+          "paragraphs": [
+            "Tetris"
+          ],
+          "bgColor": "#0070bc",
+          "image": "/assets/images/breakout-game.jpg",
+          "developers": [
+            "Mathis Garberg"
+          ],
+          "repo": "",
+          "images": [
+              ""
+          ],
+          "time": "2017-07-17T19:22:04.762Z"
+        },
+        {
+          "id": "7893759853m73n2d348j433k",
+          "title": "Tetris - JavaScript",
+          "body": "Tetris",
+          "year": 2018,
+          "tags": [
+            "JavaScript",
+            "jQuery"
+          ],
           "roles": [
             "Frontend Development"
           ],

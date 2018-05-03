@@ -1,24 +1,34 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var bodyParser = require('body-parser');
+// get dependencies
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
-var publication = require('./routes/publication');
-var app = express();
-var mongoose = require('mongoose');
+// Get API routes
+const publications = require('./routes/publications');
+const projects = require('./routes/projects');
 
-mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/mean-angular5', { useMongoClient: true, promiseLibrary: require('bluebird') })
+const app = express();
+
+// connect to db
+const mongoDB = 'mongodb://localhost/mean-angular5';
+mongoose.connect(mongoDB)
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
+mongoose.Promise = global.Promise;
 
+// parsers for POST data
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({'extended':'false'}));
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// point static path to dist
 app.use(express.static(path.join(__dirname, 'dist')));
-app.use('/publications', express.static(path.join(__dirname, 'dist')));
-app.use('/api/publications', publication);
+
+// set out api routes
+app.use('/api', publications);
+app.use('/api', projects);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -6,7 +6,7 @@ import { map, catchError } from 'rxjs/operators';
 
 const routes = {
   tags: `/tags`,
-  tag: (id: number) => { return `/tag/${id}` }
+  tag: (id: string) => { return `/tag/${id}` }
 };
 
 @Injectable()
@@ -14,10 +14,10 @@ export class TagService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getAll(): Observable<[string]> {
+  getProjects(id: string): Observable<[string]> {
     return this.httpClient
       // .cache()
-      .get(routes.tags)
+      .get(routes.tag(id))
       .pipe(
         map((body: any) => body),
         catchError(() => of('Error, could not load data'))

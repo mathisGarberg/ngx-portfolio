@@ -14,9 +14,7 @@ export class ProjectListComponent implements OnInit {
   projects: Project[];
   isLoading = true;
 
-  constructor(
-    private projectService: ProjectService
-  ) { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
     this.loadProjects();
@@ -26,7 +24,7 @@ export class ProjectListComponent implements OnInit {
     this.projectService.getAllProjects()
       .pipe(finalize(() => { this.isLoading = false; }))
       .subscribe((projects: any) => {
-        console.log(projects);
+        // console.log(projects);
         this.projects = projects;
       });
   }

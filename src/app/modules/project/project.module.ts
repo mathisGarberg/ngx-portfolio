@@ -11,6 +11,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
 import { CategoryListComponent } from './category-list/category-list.component';
+import { TagListComponent } from './tag-list/tag-list.component';
 
 @NgModule({
   imports: [
@@ -19,14 +20,14 @@ import { CategoryListComponent } from './category-list/category-list.component';
     SharedModule,
     Angulartics2Module,
     ProjectRoutingModule,
-
   ],
   declarations: [
     ProjectComponent,
     ProjectDetailsComponent,
     ProjectListComponent,
     ProjectPreviewComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    TagListComponent
   ],
   providers: []
 })

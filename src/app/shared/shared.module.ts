@@ -8,15 +8,11 @@ import { SectionComponent } from './components/section/section.component';
 
 import { PairsPipe } from './pipes/pairs.pipe';
 
-import {VgCoreModule} from 'videogular2/core';
-import {VgControlsModule} from 'videogular2/controls';
-import {VgOverlayPlayModule} from 'videogular2/overlay-play';
-import {VgBufferingModule} from 'videogular2/buffering';
+import { VgCoreModule } from 'videogular2/core';
+import { VgControlsModule } from 'videogular2/controls';
+import { VgOverlayPlayModule } from 'videogular2/overlay-play';
+import { VgBufferingModule } from 'videogular2/buffering';
 import { FooterComponent } from './components/footer/footer.component';
-
-// import {SingleMediaPlayer} from './single-media-player';
-
-// import { ZoomModule } from 'angular-zoom';
 
 @NgModule({
   imports: [
@@ -26,8 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    NgbModule.forRoot(),
-    // ZoomModule
+    NgbModule.forRoot()
   ],
   declarations: [
     LoaderComponent,

@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PairsPipe implements PipeTransform {
   transform(value:any) {
     if (!value) return;
-    return value.filter((v:any, i:any) => i%2==0)
-      .map((v:any, i: any) => [value[i*2], value[i*2+1]])
+    return value.filter((v: any, i: any) => i % 2 ==0)
+      .map((v: any, i: any) => [value[i*2], value[i*2+1]])
   }
 }

@@ -54,12 +54,12 @@ export class SectionService {
                 {
                     id: 1,
                     name: 'AngularJS',
-                    link: ''
+                    link: 'angularjs'
                 },
                 {
                     id: 2,
                     name: 'Plain JavaScript',
-                    link: ''
+                    link: 'javascript'
                 },
                 {
                     id: 1,

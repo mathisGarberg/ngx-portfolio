@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Project } from '@app/shared';
 
 @Component({
@@ -10,10 +12,13 @@ export class ProjectPreviewComponent implements OnInit {
 
   @Input() project: Project;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit() {
-    console.log(this.project);
+    // console.log(this.project);
+    
   }
 
 }

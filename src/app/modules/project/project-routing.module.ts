@@ -7,6 +7,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 import { CategoryListComponent } from './category-list/category-list.component';
+import { TagListComponent } from './tag-list/tag-list.component';
 
 
 const routes: Routes = [
@@ -14,16 +15,16 @@ const routes: Routes = [
   { 
     path: '',
     component: ProjectComponent,
-    data: { title: extract('Project') },
     children: [
       {
         path: '',
         redirectTo: 'list',
-        pathMatch: 'full'
+        pathMatch: 'full',
       },
       {
         path: 'list',
-        component: ProjectListComponent
+        component: ProjectListComponent,
+        data: { title: extract('Project') }
       },
       {
         path: 'details/:id',
@@ -32,6 +33,10 @@ const routes: Routes = [
       {
         path: 'category/:id',
         component: CategoryListComponent
+      },
+      {
+        path: 'tags/:id',
+        component: TagListComponent
       }
     ]
   }

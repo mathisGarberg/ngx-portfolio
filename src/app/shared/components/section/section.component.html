@@ -9,7 +9,7 @@
           <a [routerLink]="['/project/'+section.title.toLowerCase(), link.link]">{{ link.name }}</a> 
         </li>
         <li [ngbCollapse]="isCollapsed" *ngFor="let hiddenItem of hiddenItems">
-          {{ hiddenItem.name }}
+          <a [routerLink]="['/project/'+section.title.toLowerCase(), hiddenItem.link]">{{ hiddenItem.name }}</a>
         </li>
         <li class="show-more" [hidden]="section.links.length <= 3">
           <a class="link" (click)="toggleContent()">

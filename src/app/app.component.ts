@@ -18,14 +18,16 @@ const log = new Logger('App');
 })
 export class AppComponent implements OnInit {
 
-  constructor(private router: Router,
-              private activatedRoute: ActivatedRoute,
-              private titleService: Title,
-              private translateService: TranslateService,
-              // do not remove the analytics injection, even if the call in ngOnInit() is removed
-              // this injection initializes page tracking through the router
-              private angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
-              private i18nService: I18nService) { }
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private titleService: Title,
+    private translateService: TranslateService,
+    // do not remove the analytics injection, even if the call in ngOnInit() is removed
+    // this injection initializes page tracking through the router
+    private angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
+    private i18nService: I18nService
+  ) { }
 
   ngOnInit() {
     // Setup logger
