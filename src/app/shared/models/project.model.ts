@@ -13,5 +13,5 @@ export class Project {
     learningOutcome: string;
     repo: string;
     images: Array<string>;
-    time: string;
+    time: Date | string;
 }

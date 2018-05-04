@@ -13,9 +13,9 @@ router.get('/projects', function (req, res, next) {
     })
 });
 
-// get a single post
+// get a single project
 router.get('/projects/:id', (req, res, next) => {
-    Post.findById({_id: req.params.id}).then((project) => {
+    Project.findById({_id: req.params.id}).then((project) => {
         res.send(project);
     });
 });

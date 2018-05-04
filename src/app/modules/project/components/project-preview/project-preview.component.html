@@ -1,8 +1,8 @@
 <div class="row fadeIn" *ngIf="project">
     <div class="col-md-6">
-        <a [routerLink]="['/project/details', project[0].id]">
+        <a [routerLink]="['/project/details', project[0]._id]">
             <div class="image-container">
-                <img [src]="project[0].image" class="img-fluid image">
+                <img [src]="project[0].thumbnail" class="img-fluid image">
                 <div class="overlay" [ngStyle]="{'background-color': project[0].bgColor}">
                     <div class="year">{{ project[0].year }}</div>
                     <div class="seperator"></div>
@@ -16,15 +16,15 @@
         </a>
         <div>
             <span class="badge badge-secondary" *ngFor="let tag of project[1].tags" [routerLink]="['/project/tags', tag.toLowerCase()]" >{{ tag }}</span>
-        </div>
+        </div> 
         <h5>{{ project[0].title }}</h5>
-        <p>{{ project[0].body }}</p>
+        <p>{{ project[0].text }}</p>
         <!-- <span>Read more...</span> -->
     </div>
     <div class="col-md-6">
-        <a [routerLink]="['/project/details', project[1].id]">
+        <a [routerLink]="['/project/details', project[1]._id]">
             <div class="image-container" >
-                <img [src]="project[1].image" class="img-fluid image">
+                <img [src]="project[1].thumbnail" class="img-fluid image">
                 <div class="overlay" [ngStyle]="{'background-color': project[1].bgColor}">
                     <div class="year">{{ project[1].year }}</div>
                     <div class="seperator"></div>
@@ -40,7 +40,7 @@
             </div>
             <h5>{{ project[1].title }}</h5>
         </a>
-        <p>{{ project[1].body }}</p>
+        <p>{{ project[1].text }}</p>
         <!-- <span>Read more...</span> -->
     </div>
 </div>

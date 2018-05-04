@@ -12,7 +12,7 @@ const projects = require('./routes/projects');
 const app = express();
 
 // connect to db
-const mongoDB = 'mongodb://localhost/mean-angular5';
+const mongoDB = 'mongodb://PI_Mathis:2x1HzAxF4Efb@ds141358.mlab.com:41358/ngx-portolfio';
 mongoose.connect(mongoDB)
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));

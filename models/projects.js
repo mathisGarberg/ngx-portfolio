@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const ProjectSchema = new Schema({
     id:  { type: String, required: true },
     title: { type: String, required: true },
-    body: { type: String, required: true },
+    text: { type: String, required: true },
     year: { type: Date, required: true },
     tags: [
         { type: String, required: false }

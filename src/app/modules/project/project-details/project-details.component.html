@@ -3,12 +3,12 @@
         <article class="project col-xs-12 col-md-12">
             <figure class="image text-center mb-xs-40">
                 <span class="image-content">
-                    <img [src]="project?.image" alt="" class="image-img img-fluid">
+                    <img [src]="project?.thumbnail" alt="" class="image-img img-fluid">
                 </span>
             </figure>
             <header class="header-title">
                 <h3 class="date">
-                    {{ project?.year }}
+                    {{ project?.time | date }}
                 </h3>
                 <h2 class="title">
                     {{ project?.title }}
