@@ -32,6 +32,7 @@
     "@fortawesome/fontawesome-free-webfonts": "^1.0.4",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0",
     "@ngx-translate/core": "^9.0.1",
+    "@nicky-lenaers/ngx-scroll-to": "^0.6.1",
     "angular-zoom": "0.0.5",
     "angulartics2": "^5.2.0",
     "bluebird": "^3.5.1",

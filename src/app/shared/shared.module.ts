@@ -5,6 +5,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectionComponent } from './components/section/section.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { PairsPipe } from './pipes/pairs.pipe';
 
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    ScrollToModule.forRoot()
   ],
   declarations: [
     LoaderComponent,
@@ -37,7 +39,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent,
     PairsPipe,
     NgbModule,
-    SectionComponent
+    SectionComponent,
+    ScrollToModule
   ]
 })
 export class SharedModule { }
