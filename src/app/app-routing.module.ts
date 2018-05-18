@@ -8,7 +8,7 @@ const routes: Routes = [
     { path: 'project', loadChildren: 'app/modules/project/project.module#ProjectModule' },
   ]),
   // Fallback when no prior route is matched
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '/about', pathMatch: 'full' }
 ];
 
 @NgModule({

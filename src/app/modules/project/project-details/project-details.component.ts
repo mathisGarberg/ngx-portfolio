@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+
 import { ProjectService } from '@app/core';
 
 @Component({
@@ -20,6 +21,7 @@ export class ProjectDetailsComponent implements OnInit {
   ngOnInit() {
     this.loadProject();
   }
+
 
   loadProject() {
     this.projectService.getSingleProject(this.route.snapshot.params['id'])
