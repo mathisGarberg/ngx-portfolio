@@ -39,7 +39,7 @@
         "I emnet Programmering for Web 2 fikk vi oppgave i programmere et filtreringssystem for banneord. Oppgaven skulle løses uten eksterne biblioteker og rammeverk (plain JavaScript)."
       ],
       "bgColor": "#0070bc",
-      "image": "/assets/images/swearing.jpg",
+      "thumbnail": "/assets/images/swearing.jpg",
       "developers": [
         "Mathis Garberg"
       ],
@@ -66,7 +66,7 @@
         "Som del av emnet WWW-Teknologi fikk vi i oppgave å programmere om oppgaven (NTNUTube) til en SPA-applikasjon (Sinlge Page Application). Systemet krever ikke at du er logget inn, men om du ønsker å legge til videoer og endre dem er du nødt til å gjøre dette."
       ],
       "bgColor": "#2a2a2a",
-      "image": "/assets/images/singletube.jpg",
+      "thumbnail": "/assets/images/singletube.jpg",
       "developers": [
         "Mathis Garberg",
         "Stian Rønningen"
@@ -96,7 +96,7 @@
         "Tetris"
       ],
       "bgColor": "#0070bc",
-      "image": "/assets/images/tetris.jpg",
+      "thumbnail": "/assets/images/tetris.jpg",
       "developers": [
         "Mathis Garberg"
       ],
@@ -122,7 +122,7 @@
         "Tetris"
       ],
       "bgColor": "#0070bc",
-      "image": "/assets/images/breakout-game.jpg",
+      "thumbnail": "/assets/images/breakout-game.jpg",
       "developers": [
         "Mathis Garberg"
       ],
