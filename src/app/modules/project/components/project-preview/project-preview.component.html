@@ -15,8 +15,8 @@
             </div>
         </a>
         <div>
-            <span class="badge badge-secondary" *ngFor="let tag of project[1].tags" [routerLink]="['/project/tags', tag.toLowerCase()]" >{{ tag }}</span>
-        </div> 
+            <span class="badge badge-secondary mr-2" *ngFor="let tag of project[1].tags" [routerLink]="['/project/tags', tag.toLowerCase()]" >{{ tag }}</span>
+        </div>
         <h5>{{ project[0].title }}</h5>
         <p>{{ project[0].text }}</p>
         <!-- <span>Read more...</span> -->
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div>
-                <span class="badge badge-secondary" *ngFor="let tag of project[1].tags">{{ tag }}</span>
+                <span class="badge badge-secondary mr-2" *ngFor="let tag of project[1].tags">{{ tag }}</span>
             </div>
             <h5>{{ project[1].title }}</h5>
         </a>

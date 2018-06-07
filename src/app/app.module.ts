@@ -14,6 +14,7 @@ import { SharedModule } from '@app/shared';
 import { PostModule } from './modules/post/post.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutModule } from './modules/about/about.module';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     TranslateModule.forRoot(),
     CoreModule.forRoot(),
     SharedModule,
+    AboutModule,
     PostModule,
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule

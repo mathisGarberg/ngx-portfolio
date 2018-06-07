@@ -35,7 +35,7 @@ export class SectionComponent implements OnInit {
 
   toggleContent() {
     this.isCollapsed = !this.isCollapsed;
-    this.collapseText = this.isCollapsed ? 'Vis alt' : 'Gjem';
+    this.collapseText = this.isCollapsed ? 'Vis alle' : 'Gjem';
   }
 
 }
