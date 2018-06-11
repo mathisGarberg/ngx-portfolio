@@ -1,7 +1,7 @@
 <main class="main fadeIn">
     <article class="container">
         <div class="row">
-            <div class="col-md-10 col-xs-12">
+            <div class="col-md-11 col-xs-12">
                 <section class="hero">
                     <div class="hero-content">
                         <div class="hero-image">
@@ -12,6 +12,7 @@
                                 Hello! My name is Mathis Garberg, a fullstack developer from Oslo, Norway
                             </h1>
                             <p class="large" translate>I design, build, operate and maintain web apps.</p>
+                            <p class="large">Contact me at <a class="link-underline mail-link" href="mailto:mathis.garberg@outlook.com">mathis.garberg@outlook.com</a></p>
                         </div>
                     </div>
                     <div class="hero-arrow" data-component="smoothScroll" [ngx-scroll-to]="'#destination'">
@@ -54,7 +55,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 mb-xs-20" *ngFor="let socialLink of socialLinks">
                         <span class="extra-large">
-                            <a [href]="socialLink.url" class="link-dark">{{ socialLink.name }}</a>
+                            <a [href]="socialLink.url" class="link-dark" target="_blank">{{ socialLink.name }}</a>
                         </span>
                     </div>
                 </div>

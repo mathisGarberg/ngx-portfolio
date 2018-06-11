@@ -44,6 +44,10 @@
   cursor: pointer;
 }
 
+.mail-link {
+  color: #54c0e4;
+}
+
 @keyframes bounce {
     from {
       transform: translateY(0px);
@@ -72,7 +76,7 @@
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     .hero-content {
       display: flex;
       flex-direction: column;
