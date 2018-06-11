@@ -3,8 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 
 import { ProjectService } from '@app/core';
 
-import * as mediumZoom from 'medium-zoom'
-
 @Component({
   selector: 'app-project-details',
   templateUrl: './project-details.component.html',
@@ -22,11 +20,6 @@ export class ProjectDetailsComponent implements OnInit {
   ngOnInit() {
     this.loadProject();
   }
-
-  ngAfterViewInit() {
-    mediumZoom(('image'));
-  }
-
 
   loadProject() {
     this.projectService.getSingleProject(this.route.snapshot.params['id'])

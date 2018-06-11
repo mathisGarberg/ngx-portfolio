@@ -71,3 +71,30 @@
       max-width: 83.333333%;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .hero-image {
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .hero-image > img {
+      display: block;
+      margin:-10.875% 0;
+    }
+
+    .hero {
+      position: static;
+      display: flex;
+      align-items: center;
+    }
+    
+
+  }
